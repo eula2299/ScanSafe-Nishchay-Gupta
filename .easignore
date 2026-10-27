@@ -1,0 +1,11 @@
+node_modules/
+.expo/
+dist/
+build/
+ios/
+android/
+.env
+.env.*
+search-server.mjs
+*.tsbuildinfo
+.DS_Store

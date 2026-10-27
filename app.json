@@ -1,0 +1,56 @@
+{
+  "expo": {
+    "name": "Scan Safe",
+    "slug": "scan-safe-mobile",
+    "version": "1.0.0",
+    "orientation": "portrait",
+    "userInterfaceStyle": "light",
+    "ios": {
+      "supportsTablet": false,
+      "bundleIdentifier": "com.scansafe.mobile",
+      "infoPlist": {
+        "CFBundleLocalizations": [
+          "en",
+          "es"
+        ]
+      },
+      "buildNumber": "1"
+    },
+    "android": {
+      "package": "com.scansafe.mobile",
+      "permissions": [
+        "android.permission.CAMERA"
+      ],
+      "versionCode": 1
+    },
+    "plugins": [
+      [
+        "expo-camera",
+        {
+          "cameraPermission": "Scan Safe uses your camera to scan product barcodes.",
+          "recordAudioAndroid": false
+        }
+      ],
+      "expo-localization",
+      [
+        "expo-image-picker",
+        {
+          "photosPermission": "Choose a product label photo for Scan Safe to read.",
+          "cameraPermission": "Photograph a product label for Scan Safe to read.",
+          "microphonePermission": false
+        }
+      ]
+    ],
+    "extra": {
+      "supportedLanguages": [
+        "en",
+        "es"
+      ],
+      "eas": {
+        "projectId": "fe5254a0-7542-4407-8b34-5947e563c420"
+      }
+    },
+    "icon": "./assets/icon.png",
+    "owner": "nnjuhuh"
+  }
+}
